@@ -1,0 +1,241 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Element Selectors */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1a2a4f;
+}
+
+/* Header */
+#top-header {
+    background-color: #1a2a4f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area h1 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: #cdd9ff;
+}
+
+/* Navigation menu */
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav ul li {
+    display: inline-block; /* inline-block usage */
+    margin-left: 15px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.main-nav ul li a:hover {
+    background-color: #32467a;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.welcome-content {
+    max-width: 800px; /* max-width usage */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-content p {
+    margin: 15px 0 25px;
+    line-height: 1.6;
+}
+
+.btn-apply {
+    display: inline-block; /* inline-block */
+    background-color: #1a2a4f;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn-apply:hover {
+    background-color: #32467a;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 40px 20px;
+    background-color: #eef2ff;
+}
+
+.courses-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.courses-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex; /* layout */
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #d5daed;
+    border-radius: 8px;
+    width: 32%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: relative; /* for badge positioning */
+}
+
+/* New badge */
+.new-course {
+    border-color: #ff9800;
+}
+
+.badge-new {
+    position: absolute; /* absolute positioning */
+    top: 10px;
+    right: 10px;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+/* Notice Board */
+.notice-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.notice-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.notice-box {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 180px;       /* fixed height */
+    overflow: auto;      /* overflow usage */
+    background-color: #fafafa;
+}
+
+/* Campus Section */
+.campus-section {
+    padding: 40px 20px 80px;
+    background-color: #eef2ff;
+}
+
+.campus-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campus-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative; /* relative parent for overlapping box */
+}
+
+/* Image placeholder */
+.image-placeholder {
+    background-color: #cbd5ff;
+    border: 2px dashed #6875f5;
+    height: 260px;
+    display: flex;      /* block, flex layout */
+    align-items: center;
+    justify-content: center;
+    color: #1a2a4f;
+    font-weight: bold;
+}
+
+/* Overlapping info box */
+.campus-info-box {
+    position: absolute; /* overlapping */
+    bottom: -40px;
+    right: 30px;
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #d5daed;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;        /* z-index usage */
+}
+
+/* Fixed Contact Us button */
+.contact-fixed-btn {
+    position: fixed;    /* fixed positioning */
+    right: 20px;
+    bottom: 20px;
+    background-color: #ff5722;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1a2a4f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Group selectors example */
+p, li, a {
+    font-size: 0.95rem;
+}
+
+/* ID selector example */
+#course-1, #course-2, #course-3 {
+    /* Just to show ID selector usage; keep simple */
+}
+
+/* Sticky example (optional: for header or another element) */
+/* Uncomment if you want sticky header */
+#top-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
