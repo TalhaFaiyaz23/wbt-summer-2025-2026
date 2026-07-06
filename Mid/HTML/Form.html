@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+     <link rel="stylesheet" href="../CSS/Form.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>Form Fillup</h1>
+    </header>
+     
+
+    <main>
+        
+        <h1>American International University of Bangladesh</h1>
+
+    <form action="submit_form.php" method="post">
+
+        <div class="box"></div>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" inputmode="numeric" pattern="[0-9]*" id="phone" name="phone" required><br><br>
+
+        </div> 
+
+
+        <div class="gender">
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+         </div>   
+
+        <label for="category">Choose Sports:</label><br><br>
+        <input type="checkbox" id="cricket" name="sports" value="cricket">
+        <label for="cricket">Cricket</label><br>
+        <input type="checkbox" id="football" name="sports" value="football">
+        <label for="football">Football</label><br>  
+        <input type="checkbox" id="Tennis" name="sports" value="Tennis">
+        <label for="Tennis">Tennis</label><br><br>
+
+        <div class="submit-btn">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+        
+</main>
+
+    <footer><h1>Contact Admin :</h1>
+    <h2>Email : talhafaiyazofficial@gmail.com</h2>
+    </footer>
+
+</body>
+
+</html>
