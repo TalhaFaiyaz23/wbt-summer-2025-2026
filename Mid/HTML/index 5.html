@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 id="heading">Online Shopping Cart</h1>
+
+    <table>
+
+        <tr>
+            <th>Product</th>
+            <th>Price ($)</th>
+            <th>Quantity</th>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>900</td>
+            <td><input type="number" id="laptopQty" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td>Mouse</td>
+            <td>20</td>
+            <td><input type="number" id="mouseQty" min="0" value="0"></td>
+        </tr>
+
+        <tr>
+            <td>Keyboard</td>
+            <td>35</td>
+            <td><input type="number" id="keyboardQty" min="0" value="0"></td>
+        </tr>
+
+    </table>
+
+    <div class="buttons">
+        <button id="calculate">Calculate Total</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <div class="result">
+
+        <h2>Shopping Summary</h2>
+
+        <p id="laptopCost"></p>
+        <p id="mouseCost"></p>
+        <p id="keyboardCost"></p>
+        <p id="subtotal"></p>
+        <p id="vat"></p>
+        <p id="grandTotal"></p>
+
+    </div>
+
+</div>
+
+<script src="../JavaScript/.js"></script>
+
+</body>
+</html>
