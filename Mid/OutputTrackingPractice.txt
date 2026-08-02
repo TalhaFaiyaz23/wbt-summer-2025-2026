@@ -1,0 +1,115 @@
+Light Switch
+
+A room light is initially OFF. Every time the button is clicked, the light changes between ON and OFF. Write the output shown after the 1st, 2nd, and 3rd clicks.
+-----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Light Switch</title>
+</head>
+<body>
+
+<h2>Room Light</h2>
+
+<p id="status">Light is OFF</p>
+
+<button id="lightBtn">Switch</button>
+
+<script>
+let light = false;
+
+document.getElementById("lightBtn").addEventListener("click", function () {
+
+    if (light == false) {
+        light = true;
+        document.getElementById("status").innerHTML = "Light is ON";
+    } else {
+        light = false;
+        document.getElementById("status").innerHTML = "Light is OFF";
+    }
+
+});
+</script>
+
+</body>
+</html>
+
+-------------------------------------------------------------
+
+Restaurant Order Status
+
+A restaurant starts with 5 available meals. Every button click means one meal has been sold, so the number decreases by 1. Determine the output after the 1st, 2nd, and 3rd clicks.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Orders</title>
+</head>
+<body>
+
+<h2>Restaurant</h2>
+
+<p id="meal">Meals Left: 5</p>
+
+<button id="orderBtn">Place Order</button>
+
+<script>
+let meals = 5;
+
+document.getElementById("orderBtn").addEventListener("click", function () {
+    meals--;
+    document.getElementById("meal").innerHTML = "Meals Left: " + meals;
+});
+</script>
+
+</body>
+</html>
+
+
+-------------------------------------------------------------------------
+Library Book Borrowing
+
+A library has 6 books available. Every time the "Borrow Book" button is clicked, one book is borrowed. When only 2 books are left, the message changes to "Only Few Books Left!". If there are no books left, the message becomes "No Books Available." Determine the output after the 1st, 2nd, 3rd, 4th, and 5th button clicks.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+</head>
+<body>
+
+<h2>Library System</h2>
+
+<p id="result">Books Available: 6</p>
+
+<button id="borrowBtn">Borrow Book</button>
+
+<script>
+
+let books = 6;
+
+document.getElementById("borrowBtn").addEventListener("click", function () {
+
+    if (books > 0) {
+        books--;
+    }
+
+    if (books == 0) {
+        document.getElementById("result").innerHTML = "No Books Available";
+    }
+    else if (books <= 2) {
+        document.getElementById("result").innerHTML =
+        "Only Few Books Left! (" + books + ")";
+    }
+    else {
+        document.getElementById("result").innerHTML =
+        "Books Available: " + books;
+    }
+
+});
+
+</script>
+
+</body>
+</html>
