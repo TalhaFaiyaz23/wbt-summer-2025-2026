@@ -1,0 +1,83 @@
+
+What is JSON?
+
+A simple text format for storing data. Looks like PHP arrays, but it's just text 
+a database-free way to save structured data in a file.
+
+Basic Syntax
+json
+"text"          → string (always double quotes)
+25              → number (no quotes)
+true / false    → boolean
+null            → empty value
+
+
+Object (key → value pairs):
+
+json
+{
+    "name": "Karim",
+    "age": 22
+}
+
+Array (a list):
+
+json
+["CSE", "EEE", "BBA"]
+
+Array of objects (most common — like a table):
+
+json
+[
+    { "id": 1, "name": "Karim" },
+    { "id": 2, "name": "Farhana" }
+]
+
+
+Rules to Remember
+Keys and strings → always double quotes "like this"
+No comma after the last item
+No comments allowed inside JSON
+Objects use { }, arrays use [ ]
+How to Connect JSON with PHP
+
+Two functions do all the work:
+
+Function	Direction	Use
+json_decode()	JSON text → PHP array	When reading the file
+json_encode()	PHP array → JSON text	When saving the file
+
+
+Reading (Decode)
+php
+$data = file_get_contents('students.json');   // read file → gives text
+$students = json_decode($data, true);          // text → PHP array
+
+true = give me an array ($students['name']) not an object ($students->name).
+
+
+Writing (Encode)
+php
+$students[] = ['name' => 'Karim'];              // add new item to array
+
+file_put_contents('students.json', json_encode($students));  // array → text → save
+
+The Core Cycle (memorize this)
+JSON file  →  json_decode  →  PHP array  →  (edit it)  →  json_encode  →  save to JSON file
+
+Must-Do things
+File must start with [] (empty array) before first use
+ Always json_decode() before using data as PHP
+ Always json_encode() before saving back to file
+ Add a fallback in case decode fails:
+php
+  $students = json_decode($data, true) ?: [];
+ Folder/file must be writable by the server
+
+
+
+Optional (nice to have)
+JSON_PRETTY_PRINT → makes the saved file readable with indentation
+php
+  json_encode($students, JSON_PRETTY_PRINT);
+

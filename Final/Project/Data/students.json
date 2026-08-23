@@ -1,0 +1,35 @@
+[
+    {
+        "student_id": "11111",
+        "name": "Rahim",
+        "email": "rahim@abc.com",
+        "password": "$2y$10$6JWyoTBnYe8k8U7oLmEPuObZ.Oi1uLMdKeivjqAl9eovXwcioBrqy",
+        "gender": "Male",
+        "department": "CSE",
+        "address": "asdasd asdasdasd asdasdasd asdasdas asdads",
+        "document": "1787194328_green-campus-4.jpg",
+        "created_at": "2026-08-20 04:52:08"
+    },
+    {
+        "student_id": "11111",
+        "name": "Rahim",
+        "email": "rahim@abc.com",
+        "password": "$2y$10$SpCI\/2zw.DKF4Bqc0YyXlO\/03LkiY61uNuvxXjarp5ALjuPGWE2VK",
+        "gender": "Male",
+        "department": "CSE",
+        "address": "asdasd asdasdasd asdasdasd asdasdas asdads",
+        "document": "1787194403_green-campus-4.jpg",
+        "created_at": "2026-08-20 04:53:24"
+    },
+    {
+        "student_id": "5555",
+        "name": "Karim",
+        "email": "karim@gmail.com",
+        "password": "$2y$10$za33m8hNKjEx6xW94flfYu2ty.arTtPa5Msakhlrthfz3QTVEiSGq",
+        "gender": "Male",
+        "department": "EEE",
+        "address": "asdasd asdasdasd asdasdasd asdasdas asdads",
+        "document": "1787211795_green-campus-4.jpg",
+        "created_at": "2026-08-20 09:43:15"
+    }
+]
